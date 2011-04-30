@@ -7,12 +7,18 @@ set(CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake/Modules/
                       ${CMAKE_MODULE_PATH})
 find_package(PythonLibs REQUIRED)
 find_package(PythonInterpWithDebug REQUIRED)
+find_package(GeneratorRunner 0.6.9 REQUIRED)
 find_package(Shiboken 1.0.1 REQUIRED)
 find_package(PySide 1.0.0 REQUIRED)
 find_package(Qt4 4.6.2 REQUIRED)
 SET(SUPPORTED_QT_VERSION "4.6.0")
 find_package(QtMobility 1.0.0 REQUIRED )
 
+if (WIN32)
+    set(PATH_SEP "\;")
+else()
+    set(PATH_SEP ":")
+endif()
 
 if(CMAKE_HOST_UNIX)
     option(ENABLE_GCC_OPTIMIZATION "Enable specific GCC flags to optimization library size and performance. Only available on Release Mode" 0)

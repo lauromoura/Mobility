@@ -120,7 +120,7 @@ indexes                 = qt.index
 
 sources.fileextensions  = "*.qdoc *.cpp"
 
-outputdir               = @CMAKE_CURRENT_BINARY_DIR@/qt4xmldoc
+outputdir               = @DOC_DATA_DIR@
 
 extraimages.HTML        = qtlogo \
                           codeless

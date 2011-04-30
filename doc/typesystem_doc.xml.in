@@ -1,0 +1,100 @@
+<?xml version="1.0" ?>
+<!--
+    This file is part of PySide project.
+    Copyright (C) 2009-2010 Nokia Corporation and/or its subsidiary(-ies).
+    Contact: PySide team <contact@pyside.org>
+
+    This library is free software; you can redistribute it and/or
+    modify it under the terms of the GNU Lesser General Public
+    License as published by the Free Software Foundation; either
+    version 2.1 of the License, or (at your option) any later version.
+
+    This library is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    Lesser General Public License for more details.
+
+    You should have received a copy of the GNU Lesser General Public
+    License along with this library; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+-->
+<typesystem package="PySide">
+    <suppress-warning text="File containing conversion code for *" />
+    <suppress-warning text="File for inject code not exist: *" />
+
+    @if_QtBearer@
+    <load-typesystem name="typesystem_bearer.xml" generate="yes"/>
+    @end_QtBearer@
+
+    @if_QtContacts@
+    <load-typesystem name="typesystem_contacts.xml" generate="yes"/>
+    @end_QtContacts@
+
+    @if_QtConnectivity@
+    <load-typesystem name="typesystem_connectivity.xml" generate="yes"/>
+    @end_QtConnectivity@
+
+    @if_QtFeedback@
+    <load-typesystem name="typesystem_feedback.xml" generate="yes"/>
+    @end_QtFeedback@
+
+    @if_QtGallery@
+    <load-typesystem name="typesystem_gallery.xml" generate="yes"/>
+    @end_QtGallery@
+
+    @if_QtLocation@
+    <load-typesystem name="typesystem_location.xml" generate="yes"/>
+    @end_QtLocation@
+
+    @if_QtMessaging@
+    <load-typesystem name="typesystem_messaging.xml" generate="yes"/>
+    @end_QtMessaging@
+
+    @if_QtMultimediaKit@
+    <load-typesystem name="typesystem_multimediakit.xml" generate="yes"/>
+    @end_QtMultimediaKit@
+
+    @if_QtOrganizer@
+    <load-typesystem name="typesystem_organizer.xml" generate="yes"/>
+    @end_QtOrganizer@
+
+    @if_QtPublishSubscribe@
+    <load-typesystem name="typesystem_publishsubscribe.xml" generate="yes"/>
+    @end_QtPublishSubscribe@
+
+    @if_QtSensors@
+    <load-typesystem name="typesystem_sensors.xml" generate="yes"/>
+    @end_QtSensors@
+
+    @if_QtServiceFramework@
+    <load-typesystem name="typesystem_serviceframework.xml" generate="yes"/>
+    @end_QtServiceFramework@
+
+    @if_QtSystemInfo@
+    <load-typesystem name="typesystem_systeminfo.xml" generate="yes"/>
+    @end_QtSystemInfo@
+
+    <!-- FIXME!! Versit Organizer -->
+    @if_QtVersit@
+    <load-typesystem name="typesystem_versit.xml" generate="yes"/>
+    @end_QtVersit@
+
+    <suppress-warning text="Can't find qdoc3 file for class QMatrix4x3, tried: @CMAKE_CURRENT_BINARY_DIR@/qdoc3-output/qmatrix4x3.xml" />
+    <suppress-warning text="Can't find qdoc3 file for class QMatrix3x4, tried: @CMAKE_CURRENT_BINARY_DIR@/qdoc3-output/qmatrix3x4.xml" />
+    <suppress-warning text="Can't find qdoc3 file for class QMatrix2x3, tried: @CMAKE_CURRENT_BINARY_DIR@/qdoc3-output/qmatrix2x3.xml" />
+    <suppress-warning text="Can't find qdoc3 file for class QMatrix4x2, tried: @CMAKE_CURRENT_BINARY_DIR@/qdoc3-output/qmatrix4x2.xml" />
+    <suppress-warning text="Can't find qdoc3 file for class QMatrix3x3, tried: @CMAKE_CURRENT_BINARY_DIR@/qdoc3-output/qmatrix3x3.xml" />
+    <suppress-warning text="Can't find qdoc3 file for class QMatrix2x2, tried: @CMAKE_CURRENT_BINARY_DIR@/qdoc3-output/qmatrix2x2.xml" />
+    <suppress-warning text="Can't find qdoc3 file for class QMatrix3x2, tried: @CMAKE_CURRENT_BINARY_DIR@/qdoc3-output/qmatrix3x2.xml" />
+    <suppress-warning text="Can't find qdoc3 file for class QMatrix2x4, tried: @CMAKE_CURRENT_BINARY_DIR@/qdoc3-output/qmatrix2x4.xml" />
+
+    <!-- These classes are documented in ObjectDescription<T> or other base template class -->
+    <suppress-warning text="Can't find qdoc3 file for class AudioCaptureDevice, tried: @CMAKE_CURRENT_BINARY_DIR@/qdoc3-output/phonon-audiocapturedevice.xml" />
+    <suppress-warning text="Can't find qdoc3 file for class VideoCaptureDevice, tried: @CMAKE_CURRENT_BINARY_DIR@/qdoc3-output/phonon-videocapturedevice.xml" />
+    <suppress-warning text="Can't find qdoc3 file for class AudioOutputDevice, tried: @CMAKE_CURRENT_BINARY_DIR@/qdoc3-output/phonon-audiooutputdevice.xml" />
+    <suppress-warning text="Can't find qdoc3 file for class AudioChannelDescription, tried: @CMAKE_CURRENT_BINARY_DIR@/qdoc3-output/phonon-audiochanneldescription.xml" />
+    <suppress-warning text="Can't find qdoc3 file for class EffectDescription, tried: @CMAKE_CURRENT_BINARY_DIR@/qdoc3-output/phonon-effectdescription.xml" />
+    <suppress-warning text="Can't find qdoc3 file for class SubtitleDescription, tried: @CMAKE_CURRENT_BINARY_DIR@/qdoc3-output/phonon-subtitledescription.xml" />
+    <suppress-warning text="Can't find qdoc3 file for class EffectDescriptionModel, tried: @CMAKE_CURRENT_BINARY_DIR@/qdoc3-output/phonon-effectdescriptionmodel.xml" />
+    <suppress-warning text="Can't find qdoc3 file for class AudioOutputDeviceModel, tried: @CMAKE_CURRENT_BINARY_DIR@/qdoc3-output/phonon-audiooutputdevicemodel.xml" />
+</typesystem>
