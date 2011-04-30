@@ -3,67 +3,67 @@
     <load-typesystem name="typesystem_core.xml" generate="no"/>
     <load-typesystem name="typesystem_gui.xml" generate="no"/>
 
-    <namespace-type name="QtMobility" generate="no"/>
+    <namespace-type name="QtMobility" generate="no">
 
-    <object-type name="QtMobility::QGeoAreaMonitor" target-lang-name="QGeoAreaMonitor"/>
-    <value-type name="QtMobility::QGeoCoordinate" target-lang-name="QGeoCoordinate">
+    <object-type name="QGeoAreaMonitor" target-lang-name="QGeoAreaMonitor"/>
+    <value-type name="QGeoCoordinate" target-lang-name="QGeoCoordinate">
         <enum-type name="CoordinateType" />
         <enum-type name="CoordinateFormat" />
     </value-type>
-    <value-type name="QtMobility::QGeoPositionInfo" target-lang-name="QGeoPositionInfo">
+    <value-type name="QGeoPositionInfo" target-lang-name="QGeoPositionInfo">
         <enum-type name="Attribute" />
     </value-type>
     <!-- <enum-type name="QtMobility::QGeoPositionInfoSource::PositioningMethod" flags="QtMobility::QGeoPositionInfoSource::PositioningMethods"/> -->
-    <object-type name="QtMobility::QGeoPositionInfoSource">
+    <object-type name="QGeoPositionInfoSource">
         <enum-type name="PositioningMethod" flags="QtMobility::QGeoPositionInfoSource::PositioningMethods"/>
     </object-type>
-    <value-type name="QtMobility::QGeoSatelliteInfo" target-lang-name="QGeoSatelliteInfo">
+    <value-type name="QGeoSatelliteInfo" target-lang-name="QGeoSatelliteInfo">
         <enum-type name="Attribute"/>
     </value-type>
-    <object-type name="QtMobility::QGeoSatelliteInfoSource" target-lang-name="QGeoSatelliteInfoSource">
+    <object-type name="QGeoSatelliteInfoSource" target-lang-name="QGeoSatelliteInfoSource">
         <modify-function signature="createDefaultSource(QObject *)">
           <modify-argument index="return">
             <parent index="1" action="add"/>
           </modify-argument>
         </modify-function>
     </object-type>
-    <object-type name="QtMobility::QNmeaPositionInfoSource" target-lang-name="QNmeaPositionInfoSource">
+    <object-type name="QNmeaPositionInfoSource" target-lang-name="QNmeaPositionInfoSource">
         <enum-type name="UpdateMode" />
     </object-type>
 
-    <value-type name="QtMobility::QGeoAddress" since="1.1" />
-    <object-type name="QtMobility::QGeoBoundingArea" since="1.1">
+    <value-type name="QGeoAddress" since="1.1" />
+    <object-type name="QGeoBoundingArea" since="1.1">
         <enum-type name="AreaType"/>
     </object-type>
-    <value-type name="QtMobility::QGeoBoundingBox" since="1.1"/>
-    <value-type name="QtMobility::QGeoBoundingCircle" since="1.1"/>
-    <value-type name="QtMobility::QGeoManeuver" since="1.1">
+    <value-type name="QGeoBoundingBox" since="1.1"/>
+    <value-type name="QGeoBoundingCircle" since="1.1"/>
+    <value-type name="QGeoManeuver" since="1.1">
         <enum-type name="InstructionDirection"/>
     </value-type>
-    <object-type name="QtMobility::QGeoMapCircleObject" since="1.1"/>
-    <object-type name="QtMobility::QGeoMapData" since="1.1"/>
-    <object-type name="QtMobility::QGeoMapGroupObject" since="1.1"/>
-    <object-type name="QtMobility::QGeoMapObject" since="1.1">
+    <object-type name="QGeoMapCircleObject" since="1.1"/>
+    <object-type name="QGeoMapData" since="1.1"/>
+    <object-type name="QGeoMapGroupObject" since="1.1"/>
+    <object-type name="QGeoMapObject" since="1.1">
         <enum-type name="Type" />
     </object-type>
-    <object-type name="QtMobility::QGeoMapObjectInfo" since="1.1"/>
-    <object-type name="QtMobility::QGeoMapOverlay" since="1.1">
+    <object-type name="QGeoMapObjectInfo" since="1.1"/>
+    <object-type name="QGeoMapOverlay" since="1.1">
         <modify-function signature="mapData() const" remove="all"/>
     </object-type>
-    <object-type name="QtMobility::QGeoMappingManager" since="1.1"/>
-    <object-type name="QtMobility::QGeoMappingManagerEngine" since="1.1"/>
-    <object-type name="QtMobility::QGeoMapPixmapObject" since="1.1"/>
-    <object-type name="QtMobility::QGeoMapPolygonObject" since="1.1"/>
-    <object-type name="QtMobility::QGeoMapPolylineObject" since="1.1"/>
-    <object-type name="QtMobility::QGeoMapRectangleObject" since="1.1"/>
-    <object-type name="QtMobility::QGeoMapRouteObject" since="1.1"/>
-    <object-type name="QtMobility::QGeoMapTextObject" since="1.1"/>
-    <value-type name="QtMobility::QGeoPlace" since="1.1"/>
-    <value-type name="QtMobility::QGeoRoute" since="1.1"/>
-    <object-type name="QtMobility::QGeoRouteReply" since="1.1">
+    <object-type name="QGeoMappingManager" since="1.1"/>
+    <object-type name="QGeoMappingManagerEngine" since="1.1"/>
+    <object-type name="QGeoMapPixmapObject" since="1.1"/>
+    <object-type name="QGeoMapPolygonObject" since="1.1"/>
+    <object-type name="QGeoMapPolylineObject" since="1.1"/>
+    <object-type name="QGeoMapRectangleObject" since="1.1"/>
+    <object-type name="QGeoMapRouteObject" since="1.1"/>
+    <object-type name="QGeoMapTextObject" since="1.1"/>
+    <value-type name="QGeoPlace" since="1.1"/>
+    <value-type name="QGeoRoute" since="1.1"/>
+    <object-type name="QGeoRouteReply" since="1.1">
         <enum-type name="Error" />
     </object-type>
-    <value-type name="QtMobility::QGeoRouteRequest" since="1.1">
+    <value-type name="QGeoRouteRequest" since="1.1">
         <enum-type name="TravelMode"/>
         <enum-type name="FeatureType"/>
         <enum-type name="FeatureWeight"/>
@@ -71,27 +71,27 @@
         <enum-type name="SegmentDetail"/>
         <enum-type name="ManeuverDetail"/>
     </value-type>
-    <value-type name="QtMobility::QGeoRouteSegment" since="1.1"/>
-    <object-type name="QtMobility::QGeoRoutingManager" since="1.1"/>
-    <object-type name="QtMobility::QGeoRoutingManagerEngine" since="1.1"/>
-    <object-type name="QtMobility::QGeoSearchManager" since="1.1">
+    <value-type name="QGeoRouteSegment" since="1.1"/>
+    <object-type name="QGeoRoutingManager" since="1.1"/>
+    <object-type name="QGeoRoutingManagerEngine" since="1.1"/>
+    <object-type name="QGeoSearchManager" since="1.1">
         <enum-type name="SearchType"/>
     </object-type>
-    <object-type name="QtMobility::QGeoSearchManagerEngine" since="1.1"/>
-    <object-type name="QtMobility::QGeoSearchReply" since="1.1">
+    <object-type name="QGeoSearchManagerEngine" since="1.1"/>
+    <object-type name="QGeoSearchReply" since="1.1">
         <enum-type name="Error"/>
     </object-type>
-    <object-type name="QtMobility::QGeoServiceProvider" since="1.1">
+    <object-type name="QGeoServiceProvider" since="1.1">
         <enum-type name="Error" />
     </object-type>
-    <object-type name="QtMobility::QGeoServiceProviderFactory" since="1.1"/>
-    <object-type name="QtMobility::QGeoTiledMapData" since="1.1"/>
-    <object-type name="QtMobility::QGeoTiledMappingManagerEngine" since="1.1"/>
-    <object-type name="QtMobility::QGeoTiledMapReply" since="1.1">
+    <object-type name="QGeoServiceProviderFactory" since="1.1"/>
+    <object-type name="QGeoTiledMapData" since="1.1"/>
+    <object-type name="QGeoTiledMappingManagerEngine" since="1.1"/>
+    <object-type name="QGeoTiledMapReply" since="1.1">
         <enum-type name="Error"/>
     </object-type>
-    <value-type name="QtMobility::QGeoTiledMapRequest" since="1.1"/>
-    <object-type name="QtMobility::QGraphicsGeoMap" since="1.1">
+    <value-type name="QGeoTiledMapRequest" since="1.1"/>
+    <object-type name="QGraphicsGeoMap" since="1.1">
         <enum-type name="MapType"/>
         <enum-type name="ConnectivityMode"/>
 
@@ -107,51 +107,53 @@
             </modify-argument>
         </modify-function>
     </object-type>
-    <value-type name="QtMobility::QLandmark" since="1.1"/>
-    <object-type name="QtMobility::QLandmarkAbstractRequest" since="1.1">
+    <value-type name="QLandmark" since="1.1"/>
+    <object-type name="QLandmarkAbstractRequest" since="1.1">
         <enum-type name="State"/>
         <enum-type name="RequestType"/>
     </object-type>
-    <object-type name="QtMobility::QLandmarkAttributeFilter" since="1.1">
+    <object-type name="QLandmarkAttributeFilter" since="1.1">
         <enum-type name="OperationType" />
     </object-type>
-    <object-type name="QtMobility::QLandmarkBoxFilter" since="1.1"/>
-    <value-type name="QtMobility::QLandmarkCategory" since="1.1"/>
-    <object-type name="QtMobility::QLandmarkCategoryFetchByIdRequest" since="1.1"/>
-    <object-type name="QtMobility::QLandmarkCategoryFetchRequest" since="1.1"/>
-    <object-type name="QtMobility::QLandmarkCategoryFilter" since="1.1"/>
-    <value-type name="QtMobility::QLandmarkCategoryId" since="1.1"/>
-    <object-type name="QtMobility::QLandmarkCategoryIdFetchRequest" since="1.1"/>
-    <object-type name="QtMobility::QLandmarkCategoryRemoveRequest" since="1.1"/>
-    <object-type name="QtMobility::QLandmarkCategorySaveRequest" since="1.1"/>
-    <object-type name="QtMobility::QLandmarkExportRequest" since="1.1"/>
-    <object-type name="QtMobility::QLandmarkFetchByIdRequest" since="1.1"/>
-    <object-type name="QtMobility::QLandmarkFetchRequest" since="1.1"/>
-    <value-type name="QtMobility::QLandmarkFilter" since="1.1">
+    <object-type name="QLandmarkBoxFilter" since="1.1"/>
+    <value-type name="QLandmarkCategory" since="1.1"/>
+    <object-type name="QLandmarkCategoryFetchByIdRequest" since="1.1"/>
+    <object-type name="QLandmarkCategoryFetchRequest" since="1.1"/>
+    <object-type name="QLandmarkCategoryFilter" since="1.1"/>
+    <value-type name="QLandmarkCategoryId" since="1.1"/>
+    <object-type name="QLandmarkCategoryIdFetchRequest" since="1.1"/>
+    <object-type name="QLandmarkCategoryRemoveRequest" since="1.1"/>
+    <object-type name="QLandmarkCategorySaveRequest" since="1.1"/>
+    <object-type name="QLandmarkExportRequest" since="1.1"/>
+    <object-type name="QLandmarkFetchByIdRequest" since="1.1"/>
+    <object-type name="QLandmarkFetchRequest" since="1.1"/>
+    <value-type name="QLandmarkFilter" since="1.1">
         <enum-type name="FilterType" />
         <enum-type name="MatchFlag" />
     </value-type>
-    <value-type name="QtMobility::QLandmarkId" since="1.1"/>
-    <object-type name="QtMobility::QLandmarkIdFetchRequest" since="1.1"/>
-    <object-type name="QtMobility::QLandmarkIdFilter" since="1.1"/>
-    <object-type name="QtMobility::QLandmarkImportRequest" since="1.1"/>
-    <object-type name="QtMobility::QLandmarkIntersectionFilter" since="1.1"/>
-    <object-type name="QtMobility::QLandmarkManager" since="1.1">
+    <value-type name="QLandmarkId" since="1.1"/>
+    <object-type name="QLandmarkIdFetchRequest" since="1.1"/>
+    <object-type name="QLandmarkIdFilter" since="1.1"/>
+    <object-type name="QLandmarkImportRequest" since="1.1"/>
+    <object-type name="QLandmarkIntersectionFilter" since="1.1"/>
+    <object-type name="QLandmarkManager" since="1.1">
         <enum-type name="Error" />
         <enum-type name="SupportLevel" />
         <enum-type name="ManagerFeature" />
         <enum-type name="TransferOption" />
         <enum-type name="TransferOperation" />
     </object-type>
-    <object-type name="QtMobility::QLandmarkManagerEngine" since="1.1"/>
-    <object-type name="QtMobility::QLandmarkManagerEngineFactory" since="1.1"/>
-    <object-type name="QtMobility::QLandmarkNameFilter" since="1.1"/>
-    <value-type name="QtMobility::QLandmarkNameSort" since="1.1"/>
-    <object-type name="QtMobility::QLandmarkProximityFilter" since="1.1"/>
-    <object-type name="QtMobility::QLandmarkRemoveRequest" since="1.1"/>
-    <object-type name="QtMobility::QLandmarkSaveRequest" since="1.1"/>
-    <value-type name="QtMobility::QLandmarkSortOrder" since="1.1">
+    <object-type name="QLandmarkManagerEngine" since="1.1"/>
+    <object-type name="QLandmarkManagerEngineFactory" since="1.1"/>
+    <object-type name="QLandmarkNameFilter" since="1.1"/>
+    <value-type name="QLandmarkNameSort" since="1.1"/>
+    <object-type name="QLandmarkProximityFilter" since="1.1"/>
+    <object-type name="QLandmarkRemoveRequest" since="1.1"/>
+    <object-type name="QLandmarkSaveRequest" since="1.1"/>
+    <value-type name="QLandmarkSortOrder" since="1.1">
         <enum-type name="SortType"/>
     </value-type>
-    <object-type name="QtMobility::QLandmarkUnionFilter" since="1.1"/>
+    <object-type name="QLandmarkUnionFilter" since="1.1"/>
+
+    </namespace-type>
 </typesystem>
