@@ -136,6 +136,12 @@ pre * {
     font: 100% monospace;
 }
 
+.pre {
+    font: 100% monospace;
+    background-color: #fafafa;
+    color: black;
+}
+
 .headerlink {
     display: none;
 }
@@ -263,10 +269,8 @@ hr {
 }
 
 #logo {
-    background-image: url(pysidelogo.png);
-    background-repeat: no-repeat;
-/*     background-position: 0px 4px; */
-    height: 112px;
+    text-align: left;
+    margin-bottom: 10px;
 }
 
 #search_box {
