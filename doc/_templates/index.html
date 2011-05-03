@@ -4,7 +4,7 @@
 <div class="section">
   <h1>PySide Mobility {{ version }}</h1>
 
-    <p><a href="http://labs.trolltech.com/page/Projects/QtMobility">Qt Mobility</a> is a project within Nokia that is creating a new suite of Qt APIs for mobile device functionality.</p>
+    <p><a href="http://qt.nokia.com/products/qt-addons/mobility/">Qt Mobility</a> is a project within Nokia that is creating a new suite of Qt APIs for mobile device functionality.</p>
     <p>PySide Mobility is a set of bindings that allows Python to access Qt Mobility API. It was created using the <a href="http://www.pyside.org/docs/shiboken">Shiboken</a> binding generator and depends on <a href="http://www.pyside.org">PySide</a> libraries.</p></p>
 
   <h2>Modules</h2>
@@ -12,12 +12,27 @@
     <td width="50%">
       <p class="biglink"><a class="biglink" href="{{ pathto("QtMobility/Bearer/index") }}">Bearer</a><br/>
          <span class="linkdescr">
-         An API to control the system's connectivity state.
+         An API to control the system's connectivity state. Since Qt 4.7, QtBearer functionality is provided directly in QtNetwork.
          </span></p>
 
       <p class="biglink"><a class="biglink" href="{{ pathto("QtMobility/Contacts/index") }}">Contacts</a><br/>
          <span class="linkdescr">
          An API enabling clients to request contact data from local or remote backends.
+         </span></p>
+
+      <p class="biglink"><a class="biglink" href="{{ pathto("QtMobility/Connectivity/index") }}">Connectivity</a><br/>
+         <span class="linkdescr">
+         The Connectivity API facilitates communication with local devices.
+         </span></p>
+
+      <p class="biglink"><a class="biglink" href="{{ pathto("QtMobility/Feedback/index") }}">Feedback</a><br/>
+         <span class="linkdescr">
+         An API enabling a client to provide tactile and audio feedback to user actions.
+         </span></p>
+
+      <p class="biglink"><a class="biglink" href="{{ pathto("QtMobility/Gallery/index") }}">Gallery</a><br/>
+         <span class="linkdescr">
+         An API to navigate and query documents using their meta-data.
          </span></p>
 
       <p class="biglink"><a class="biglink" href="{{ pathto("QtMobility/Location/index") }}">Location</a><br/>
@@ -37,6 +52,12 @@
          </span></p>
     </td>
     <td width="50%">
+
+      <p class="biglink"><a class="biglink" href="{{ pathto("QtMobility/Organizer/index") }}">Organizer</a><br/>
+         <span class="linkdescr">
+         An API enabling clients to request calendar, schedule and personal data from local or remote backends.
+         </span></p>
+
       <p class="biglink"><a class="biglink" href="{{ pathto("QtMobility/PublishSubscribe/index") }}">PublishSubscribe</a><br/>
          <span class="linkdescr">
          The Publish and Subscribe API, containing Value Space, enables applications to read item values, navigate through and subscribe to change notifications.
