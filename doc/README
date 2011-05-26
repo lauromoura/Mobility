@@ -1,0 +1,11 @@
+The documentation was generated with Qt 4.7 from git and QtMobility 1.2.0
+in a Ubuntu 10.10 laptop. The following modules failed to build correctly:
+
+- Messaging - Missing dependencies
+- Bearer - Only available with Qt 4.6.
+
+To generate docs for them, we manually copied the headers to the include
+directory. This was enought for Messaging but Bearer needed some hacks
+in doc/CMakeLists.txt and global.h. The CMake changes were minor ones and
+can be integrated in mainline. The global.h changes are harmful and are
+available as a patch that should be applied when generating the docs.
