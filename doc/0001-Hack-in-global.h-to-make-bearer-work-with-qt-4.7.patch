@@ -1,0 +1,48 @@
+From 50ecb236c9eb73c7ed176df069eb4e4544c3ee0d Mon Sep 17 00:00:00 2001
+From: Lauro Neto <lauro.neto@openbossa.org>
+Date: Thu, 26 May 2011 16:55:25 -0300
+Subject: [PATCH] Hack in global.h to make bearer work with qt 4.7
+
+Bearer headers need to be parsed *before* QtNetwork ones.
+---
+ QtMobility/global.h |   18 +++++++++++++-----
+ 1 files changed, 13 insertions(+), 5 deletions(-)
+
+diff --git a/QtMobility/global.h b/QtMobility/global.h
+index 7268bf1..39410c9 100644
+--- a/QtMobility/global.h
++++ b/QtMobility/global.h
+@@ -1,5 +1,13 @@
+ // Sensors
+ // QtMobility global header
++// Bearer
++//#if(QT_VERSION < QT_VERSION_CHECK(4, 7, 0))
++#include <QtBearer/QNetworkConfiguration>
++#include <QtBearer/QNetworkConfigurationManager>
++#include <QtBearer/QNetworkSession>
++//#endif
++
++
+ #include "pyside_global.h"
+ #include <qmobilityglobal.h>
+ 
+@@ -105,11 +113,11 @@
+ #endif
+ 
+ // Bearer
+-#if(QT_VERSION < QT_VERSION_CHECK(4, 7, 0))
+-#include <QNetworkConfiguration>
+-#include <QNetworkConfigurationManager>
+-#include <QNetworkSession>
+-#endif
++//#if(QT_VERSION < QT_VERSION_CHECK(4, 7, 0))
++#include <QtBearer/QNetworkConfiguration>
++#include <QtBearer/QNetworkConfigurationManager>
++#include <QtBearer/NetworkSession>
++//#endif
+ 
+ // Connectivity
+ #if (QTM_VERSION >= QTM_VERSION_CHECK(1, 2, 0))
+-- 
+1.7.1
+
